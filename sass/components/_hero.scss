@@ -1,0 +1,68 @@
+.intro {
+    height: 800px;
+    background-color: $color-dark;
+}
+
+.hero {
+    padding: 200px 0;
+}
+
+.hero__group {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero__title {
+    color: $color-white;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+}
+
+.hero__text {
+    color: $color-white;
+    font-size: 18px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    margin-left: 120px;
+
+    &-acent {
+        font-family: monospace;
+
+        width: 100px;
+        color: $color-pink;
+        font-weight: 900;
+        font-size: 22px;
+        // background-color: $color-white;
+
+        border-right: 3px solid $color-white;
+
+        animation: flashing-border 0.75s step-start infinite, printed-text 5s steps(20)
+    }
+}
+
+@keyframes flashing-border {
+    0% {
+        border-color: $color-white;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: $color-white;
+    }
+}
+
+@keyframes printed-text {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100px;
+    }
+}

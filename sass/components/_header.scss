@@ -1,0 +1,39 @@
+.page-header {
+    position: fixed;
+    z-index: 100;
+    background-color: $color-dark-transparent;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.logo {
+    // font-family: $font-title;
+    color: $color-white;
+    font-size: 38px;
+    padding: 36px 0;
+    margin-right: 55px;
+
+    &__acent {
+        color: $color-pink;
+    }
+}
+
+.site-nav__list {
+    display: flex;
+}
+
+.site-nav__item {
+    margin-right: 25px;
+    transition: $timing-function;
+    color: $color-white;
+
+    &:hover {
+        color: $color-pink;
+        cursor: pointer;
+
+    }
+}
+
+.site-contacts {
+    color: $color-white;
+}

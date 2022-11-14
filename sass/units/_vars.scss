@@ -1,0 +1,128 @@
+//  Colors
+$color-pink: #FF3F81;
+$color-white: #FFFFFF;
+$color-white-transparent: rgba(255, 255, 255, 0.3);
+$color-dark: #23153C;
+$color-dark-transparent: rgba(35, 21, 60, 0.9);
+
+//  Cubic for transition
+$timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//  Font
+$font-primery: 'DM Sans', sans-serif;
+$font-title: 'Titan One', cursive;
+
+// Break points
+
+// Base style
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: $color-dark;
+    // background-color: ;
+    font-family: $font-primery;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.6;
+    line-height: 21.94px;
+}
+
+// body.modal-open {
+//   overflow: hidden;
+// }
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 1280px;
+    padding: 0 32px;
+
+}
+
+.container.container--no-padding {
+    padding: 0;
+}
+
+.btn {
+    padding: 0 12px;
+    max-width: 200px;
+    min-height: 24px;
+
+    font-family: $font-primery;
+    font-size: 8px;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    border-radius: 20px;
+    border: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
