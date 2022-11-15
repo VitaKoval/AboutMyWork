@@ -153,6 +153,17 @@ body {
   cursor: pointer;
 }
 
+.burger {
+  display: inline-block;
+  margin: 0 8px 0 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
 .site-nav__link {
   color: inherit;
 }
@@ -184,7 +195,7 @@ body {
 
 .intro {
   min-width: 480px;
-  height: 800px;
+  height: 100vh;
   background-color: #23153C;
 }
 

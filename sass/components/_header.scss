@@ -38,6 +38,15 @@
   }
 }
 
+.burger {
+    display: inline-block;
+margin: 0 8px 0 80px;
+
+@media screen and (min-width: $tablet) {
+    display: none;
+}
+}
+
 .site-nav__link {
   color: inherit;
 }
