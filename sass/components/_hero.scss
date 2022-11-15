@@ -1,4 +1,5 @@
 .intro {
+  min-width: 480px;
   height: 800px;
   background-color: $color-dark;
 }
@@ -8,9 +9,13 @@
 }
 
 .hero__group {
-  max-width: 800px;
+  min-width: 180px;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 800px;
+  }
 }
 
 .hero__title {
@@ -26,7 +31,12 @@
   font-size: 18px;
   line-height: 1.62;
   letter-spacing: 0.06em;
-  margin-left: 120px;
+  
+  margin-bottom: 150px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 120px;
+  }
 
   &-acent {
     display: inline-flex;
@@ -65,4 +75,8 @@
   }
 }
 
-
+.hero__link {
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
