@@ -1,68 +1,68 @@
 .intro {
-    height: 800px;
-    background-color: $color-dark;
+  height: 800px;
+  background-color: $color-dark;
 }
 
 .hero {
-    padding: 200px 0;
+  padding: 200px 0;
 }
 
 .hero__group {
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .hero__title {
-    color: $color-white;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
+  color: $color-white;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
 }
 
 .hero__text {
-    color: $color-white;
-    font-size: 18px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    margin-left: 120px;
+  color: $color-white;
+  font-size: 18px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  margin-left: 120px;
 
-    &-acent {
-        font-family: monospace;
+  &-acent {
+    display: inline-flex;
 
-        width: 100px;
-        color: $color-pink;
-        font-weight: 900;
-        font-size: 22px;
-        // background-color: $color-white;
+    font-family: monospace;
 
-        border-right: 3px solid $color-white;
+    width: 22ch;
+    color: $color-pink;
+    font-weight: 900;
+    font-size: 22px;
 
-        animation: flashing-border 0.75s step-start infinite, printed-text 5s steps(20)
-    }
+    border-right: 3px solid $color-white;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: flashing-border 0.5s step-start infinite,
+      printed-text-start 2.5s steps(21) 1;
+  }
 }
 
 @keyframes flashing-border {
-    0% {
-        border-color: $color-white;
-    }
-
-    50% {
-        border-color: transparent;
-    }
-
-    100% {
-        border-color: $color-white;
-    }
+  0% {
+    border-color: $color-white;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: $color-white;
+  }
 }
 
-@keyframes printed-text {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 100px;
-    }
+@keyframes printed-text-start {
+  from {
+    width: 0;
+  }
 }
+
+
