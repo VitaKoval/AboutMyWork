@@ -271,4 +271,33 @@ body {
 .hero__link:not(:last-child) {
   margin-right: 18px;
 }
+
+.aboutMe {
+  padding: 50px 0;
+}
+
+.aboutMe__box {
+  display: flex;
+}
+
+.aboutMe__picture {
+  margin-right: 40px;
+}
+
+.aboutMe__text {
+  margin-bottom: 10px;
+}
+
+.aboutMe__resumeLink {
+  display: inline-flex;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  background-color: rgba(35, 21, 60, 0.9);
+  border-radius: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.aboutMe__resumeLink:hover, .aboutMe__resumeLink:focus {
+  background-color: #FF3F81;
+}
 /*# sourceMappingURL=main.css.map */

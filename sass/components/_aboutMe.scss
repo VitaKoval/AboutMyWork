@@ -1,0 +1,31 @@
+.aboutMe {
+  padding: 50px 0;
+}
+
+.aboutMe__box {
+  display: flex;
+}
+
+.aboutMe__picture {
+  margin-right: 40px;
+}
+
+.aboutMe__text {
+  margin-bottom: 10px;
+}
+
+.aboutMe__resumeLink {
+  display: inline-flex;
+
+  padding: 10px 20px;
+  color: $color-white;
+  background-color: $color-dark-transparent;
+  // border: 2px solid $color-pink;
+  border-radius: 10px;
+  transition: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $color-pink;
+  }
+}
