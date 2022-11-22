@@ -109,6 +109,12 @@ body {
         max-width: $desctop;
         padding: 0 32px;
     }
+
+    &.column {
+        flex-direction: column;
+justify-content: center;
+align-items: center;
+    }
 }
 
 .btn {

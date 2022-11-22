@@ -16,13 +16,19 @@
 
 .aboutMe__resumeLink {
   display: inline-flex;
+  width: 145px;
 
   padding: 10px 20px;
   color: $color-white;
+  font-size: 18px;
+  
+
   background-color: $color-dark-transparent;
-  // border: 2px solid $color-pink;
   border-radius: 10px;
   transition: $timing-function;
+  box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
+
+
 
   &:hover,
   &:focus {

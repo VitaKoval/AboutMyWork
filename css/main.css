@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -86,6 +87,12 @@ body {
     max-width: 1280px;
     padding: 0 32px;
   }
+}
+
+.container.column {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -290,14 +297,101 @@ body {
 
 .aboutMe__resumeLink {
   display: inline-flex;
+  width: 145px;
   padding: 10px 20px;
   color: #FFFFFF;
+  font-size: 18px;
   background-color: rgba(35, 21, 60, 0.9);
   border-radius: 10px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
 }
 
 .aboutMe__resumeLink:hover, .aboutMe__resumeLink:focus {
   background-color: #FF3F81;
+}
+
+.stady__box {
+  width: 100%;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.stady__carousel {
+  position: relative;
+  top: 0;
+  left: 320px;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.stady__card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90px;
+  height: 100px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: effectСarousel 8s linear infinite;
+}
+
+@keyframes effectСarousel {
+  from {
+    transform: rotateY(0deg) translateZ(180px) rotateY(0deg);
+    z-index: 10;
+    opacity: 1;
+  }
+  50% {
+    z-index: -10;
+  }
+  to {
+    transform: rotateY(360deg) translateZ(180px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 1;
+  }
+}
+
+.stady__card.stady__card--1 {
+  background-color: red;
+  animation-delay: -7s;
+}
+
+.stady__card.stady__card--2 {
+  background-color: #FC00FF;
+  animation-delay: -6s;
+}
+
+.stady__card.stady__card--3 {
+  background-color: #0093E9;
+  animation-delay: -5s;
+}
+
+.stady__card.stady__card--4 {
+  background-color: #80D0C7;
+  animation-delay: -4s;
+}
+
+.stady__card.stady__card--5 {
+  background-color: grey;
+  animation-delay: -3s;
+}
+
+.stady__card.stady__card--6 {
+  background-color: yellow;
+  animation-delay: -2s;
+}
+
+.stady__card.stady__card--7 {
+  background-color: orange;
+  animation-delay: -1s;
+}
+
+.stady__card.stady__card--8 {
+  background: olive;
 }
 /*# sourceMappingURL=main.css.map */
