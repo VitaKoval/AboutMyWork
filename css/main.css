@@ -491,13 +491,18 @@ body {
   display: block;
 }
 
+.warning {
+  color: red;
+}
+
 .portfolio__button {
   position: relative;
+  display: block;
   margin-top: auto;
   border: none;
-  background-color: transparent;
   text-align: center;
   padding: 10px 5px;
+  color: rgba(35, 21, 60, 0.9);
 }
 
 .portfolio__button:hover {

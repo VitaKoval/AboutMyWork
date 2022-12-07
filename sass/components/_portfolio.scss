@@ -48,13 +48,20 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: block;
 }
 
+.warning {
+    color: red;
+}
+
 .portfolio__button{
     position: relative;
+    display: block;
     margin-top: auto;
     border: none;
-    background-color: transparent;
+    // background-color: transparent;
     text-align: center;
     padding: 10px 5px;
+
+    color: $color-dark-transparent;
 
     &:hover {
         color: $color-pink;
