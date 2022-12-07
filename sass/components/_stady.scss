@@ -1,86 +1,6 @@
-// .stady__box {
-//   width: 100%;
-//   margin-top: 44px;
-//   margin-bottom: 44px;
-// }
-
-// .stady__carousel {
-//   position: relative;
-//   top: 0;
-//   left: 320px;
-
-//   width: 100%;
-//   height: 100px;
-
-//   margin: 0 auto;
-// }
-
-// .stady__card {
-//   position: absolute;
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   min-width: 90px;
-//   height: 100px;
-//   color: $color-white;
-
-//   border-radius: 8px;
-//   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-//   text-align: center;
-
-//   animation: effectСarousel 8s linear infinite;
-// }
-
-// @keyframes effectСarousel {
-//   from {
-//     transform: rotateY(0deg) translateZ(180px) rotateY(0deg);
-//     z-index: 10;
-//     opacity: 1;
-//   }
-
-//   50% {
-//     z-index: -10;
-//   }
-//   to {
-//     transform: rotateY(360deg) translateZ(180px) rotateY(-360deg);
-//     z-index: 10;
-//     opacity: 1;
-//   }
-// }
-
-// .stady__card.stady__card--1 {
-//   background-color: red;
-//   animation-delay: -7s;
-// }
-// .stady__card.stady__card--2 {
-//   background-color: #fc00ff;
-//   animation-delay: -6s;
-// }
-// .stady__card.stady__card--3 {
-//   background-color: #0093e9;
-//   animation-delay: -5s;
-// }
-// .stady__card.stady__card--4 {
-//   background-color: #80d0c7;
-//   animation-delay: -4s;
-// }
-// .stady__card.stady__card--5 {
-//   background-color: grey;
-//   animation-delay: -3s;
-// }
-// .stady__card.stady__card--6 {
-//   background-color: yellow;
-//   animation-delay: -2s;
-// }
-// .stady__card.stady__card--7 {
-//   background-color: orange;
-//   animation-delay: -1s;
-// }
-// .stady__card.stady__card--8 {
-//   background: olive;
-// }
+.section-stady {
+    padding: 28px 0;
+}
 
 .stady__box {
   position: relative;
@@ -103,13 +23,6 @@
   position: absolute;
   top: 20px;
   left: 10px;
-//   background-color:rgba(255, 255, 255, .8);
-  // right: 10px;
-
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-color: rgba(0, 0, 0, .3);
 
   width: 190px;
   height: 120px;
@@ -118,45 +31,69 @@
   justify-content: center;
   align-items: center;
 
-  animation: effectСarousel 45s linear infinite;
+  animation: effectСarousel 70s linear infinite;
 }
 
 .stady__card:nth-child(1) {
-  transform: rotateY(0deg) translateZ(288px);
-  animation-delay: -45s;
+  transform: rotateY(0deg) translateZ(489px);
+  animation-delay: -70s;
 }
 .stady__card:nth-child(2) {
-  transform: rotateY(40deg) translateZ(288px);
-  animation-delay: -40s;
+  transform: rotateY(40deg) translateZ(489px);
+  animation-delay: -65s;
 }
 .stady__card:nth-child(3) {
-  transform: rotateY(80deg) translateZ(288px);
-  animation-delay: -35s;
+  transform: rotateY(80deg) translateZ(489px);
+  animation-delay: -60s;
 }
 .stady__card:nth-child(4) {
-  transform: rotateY(120deg) translateZ(288px);
-  animation-delay: -30s;
+  transform: rotateY(120deg) translateZ(489px);
+  animation-delay: -55s;
 }
 .stady__card:nth-child(5) {
   //
-  transform: rotateY(160deg) translateZ(288px);
-  animation-delay: -25s;
+  transform: rotateY(160deg) translateZ(489px);
+  animation-delay: -50s;
 }
 .stady__card:nth-child(6) {
-  transform: rotateY(200deg) translateZ(288px);
-  animation-delay: -20s;
+  transform: rotateY(200deg) translateZ(489px);
+  animation-delay: -45s;
 }
 .stady__card:nth-child(7) {
-  transform: rotateY(240deg) translateZ(288px);
-  animation-delay: -15s;
+  transform: rotateY(240deg) translateZ(489px);
+animation-delay: -40s;
 }
 .stady__card:nth-child(8) {
-  transform: rotateY(280deg) translateZ(288px);
-  animation-delay: -10s;
+  transform: rotateY(280deg) translateZ(489px);
+  animation-delay: -35s;
 }
 .stady__card:nth-child(9) {
-  transform: rotateY(320deg) translateZ(288px);
-  animation-delay: -5s;
+  transform: rotateY(320deg) translateZ(489px);
+  animation-delay: -30s;
+}
+.stady__card:nth-child(10) {
+    transform: rotateY(320deg) translateZ(489px);
+    animation-delay: -25s;
+}
+.stady__card:nth-child(11) {
+    transform: rotateY(320deg) translateZ(489px);
+    animation-delay: -20s;
+}
+.stady__card:nth-child(12) {
+    transform: rotateY(320deg) translateZ(489px);
+    animation-delay: -15s;
+}
+.stady__card:nth-child(13) {
+    transform: rotateY(320deg) translateZ(489px);
+    animation-delay: -10s;
+}
+.stady__card:nth-child(14) {
+    transform: rotateY(320deg) translateZ(489px);
+    animation-delay: -5s;
+}
+.stady__card:nth-child(15) {
+    transform: rotateY(320deg) translateZ(489px);
+    // animation-delay: -6s;
 }
 
 @keyframes rotate360 {
