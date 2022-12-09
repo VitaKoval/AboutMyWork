@@ -473,6 +473,10 @@ body {
   align-items: flex-start;
 }
 
+.portfolio__min-info:nth-last-child(-n+2) {
+  align-items: center;
+}
+
 .portfolio__tumb-img {
   width: 50%;
   margin-right: 15px;
@@ -511,7 +515,6 @@ body {
 }
 
 .arrow {
-  position: absolute;
   bottom: -5px;
   left: calc(50% - 10px);
   display: block;
