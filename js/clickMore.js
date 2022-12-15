@@ -1,20 +1,19 @@
-const moreInfoProject = document.querySelector('.portfolio__button');
-const maxInfo = document.querySelector('.portfolio__max-info');
-const arrow = document.querySelector('.arrow-group');
+const moreInfoProject = document.querySelectorAll(".portfolio__button");
+const maxInfo = document.querySelectorAll(".portfolio__max-info");
+const arrow = document.querySelectorAll(".arrow-group");
 
-moreInfoProject.addEventListener('click', openInfoMore);
+for (let i = 0; i < moreInfoProject.length; i++) {
+  moreInfoProject[i].addEventListener("click", openInfoMore);
 
-function openInfoMore(evt) {
-    maxInfo.classList.toggle('active');
+  function openInfoMore(evt) {
+    maxInfo[i].classList.toggle("active");
 
-    if (maxInfo.classList.contains('active')) {
-        moreInfoProject.textContent = 'Less';
-        arrow.style.display = "none";
+    if (maxInfo[i].classList.contains("active")) {
+      moreInfoProject[i].textContent = "Less";
+      arrow[i].style.display = "none";
     } else {
-        moreInfoProject.textContent = 'More';
-        arrow.style.display = 'block';
+      moreInfoProject[i].textContent = "More";
+      arrow[i].style.display = "block";
     }
-
-   
-
+  }
 }

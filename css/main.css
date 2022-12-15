@@ -603,6 +603,10 @@ body {
   overflow: hidden;
 }
 
+.portfolio__description-active {
+  font-weight: bold;
+}
+
 .portfolio__max-info {
   display: none;
 }
