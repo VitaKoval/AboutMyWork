@@ -539,6 +539,19 @@ body {
   justify-content: center;
 }
 
+.portfolio__tumb-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.portfolio__img {
+  object-fit: contain;
+  width: 100%;
+}
+
 .portfolio__min-info {
   position: relative;
   display: flex;
@@ -558,6 +571,10 @@ body {
   color: #FFFFFF;
   background-color: #FF3F81;
   opacity: 0.8;
+}
+
+.portfolio__title {
+  text-transform: uppercase;
 }
 
 .portfolio__link {
