@@ -1,5 +1,7 @@
 .aboutMe {
   padding: 50px 0;
+
+  background: linear-gradient($color-white 30%, $color-pink);
 }
 
 .aboutMe__box {
@@ -18,19 +20,37 @@
   // height: 500px;
   // overflow: scroll;
   margin-bottom: 10px;
+  font-size: 21px;
+  background: linear-gradient($color-white 10%, $color-pink);
+
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+  
+    backdrop-filter: blur(5px);
+ 
 }
 
 .aboutMe__card {
-  display: block;
-  padding: 10px 5px;
+  background-color: grey;
+    padding: 10px 0;
 
-  border-radius: 5px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  &:nth-child(odd) {
+      color: $color-pink;
+    }
 }
+
+// .aboutMe__card {
+//   display: block;
+//   padding: 10px 5px;
+
+//   border-radius: 5px;
+//   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+//   &:not(:last-child) {
+//     margin-bottom: 10px;
+//   }
+// }
 
 .aboutMe__resumeLink {
   display: inline-flex;

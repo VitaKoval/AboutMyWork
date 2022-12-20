@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
-  justify-content: center;
+object-fit: scale-down;
 }
 
 .portfolio__tumb-img {
@@ -100,6 +100,26 @@ background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio__link-api {
+  color: inherit;
+
+  transition: $timing-function;
+
+  &:hover {
+    color: $color-pink;
+  }
+}
+
+.portfolio__link-play--mini {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('../../images/icon/external-link.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+   fill: currentColor;
 }
 
 .portfolio__link:hover .portfolio__link-play {

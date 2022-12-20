@@ -320,6 +320,7 @@ body {
 
 .aboutMe {
   padding: 50px 0;
+  background: linear-gradient(#FFFFFF 30%, #FF3F81);
 }
 
 .aboutMe__box {
@@ -336,17 +337,21 @@ body {
 
 .aboutMe__text {
   margin-bottom: 10px;
+  font-size: 21px;
+  background: linear-gradient(#FFFFFF 10%, #FF3F81);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
 }
 
 .aboutMe__card {
-  display: block;
-  padding: 10px 5px;
-  border-radius: 5px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  background-color: grey;
+  padding: 10px 0;
 }
 
-.aboutMe__card:not(:last-child) {
-  margin-bottom: 10px;
+.aboutMe__card:nth-child(odd) {
+  color: #FF3F81;
 }
 
 .aboutMe__resumeLink {
@@ -536,7 +541,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
-  justify-content: center;
+  object-fit: scale-down;
 }
 
 .portfolio__tumb-img {
@@ -609,6 +614,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio__link-api {
+  color: inherit;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__link-api:hover {
+  color: #FF3F81;
+}
+
+.portfolio__link-play--mini {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("../../images/icon/external-link.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: currentColor;
 }
 
 .portfolio__link:hover .portfolio__link-play {
