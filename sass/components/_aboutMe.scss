@@ -41,6 +41,7 @@
   object-fit: contain;
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
 }
 
 .aboutMe__text {
@@ -60,14 +61,22 @@
 
   backdrop-filter: blur(5px);
 
-  // &:nth-child(odd) {
-  //   color: $color-pink;
-  // }
+  // анимация
+  // transform: translate(0px, 120%);
+  //   opacity: 0;
+  //   transition: all 0.8s ease 0s;
 
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 }
+
+// .animation-show {
+// transform: translate(0px, 120%);
+//   opacity: 0;
+//   transition: all 0.8s ease 0s;
+// }
+
 
 .aboutMe__resumeLink {
   display: inline-flex;

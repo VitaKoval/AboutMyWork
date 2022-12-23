@@ -144,3 +144,20 @@ letter-spacing: 1.2px;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// .animation-show {
+    // transform: translate(0px, 120%);
+    // opacity: 0;
+    // transition: all 0.8s ease 0s;
+// }
+
+.animation-show {
+    transform: translate(0px, 140%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.animation-show.active-show {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
